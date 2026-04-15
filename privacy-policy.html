@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — NOIR ATELIER</title>
+  <meta name="description" content="Premium multi-page luxury product brand demo website." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="" >
+  
+<header class="topbar">
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">N</span>
+      <span class="brand-text">NOIR ATELIER</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html" class="">Home</a>
+      <a href="shop.html" class="">Collection</a>
+      <a href="about.html" class="">Brand</a>
+      <a href="faq.html" class="">FAQ</a>
+      <a href="contact.html" class="">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="cart-button" id="openCartBtn" aria-label="Open cart">
+        <span>Cart</span>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+  
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-panel reveal">
+        <p class="eyebrow">Privacy Policy</p>
+        <h1>Privacy information presented with clarity and professionalism.</h1>
+        <p>This is demo policy copy. Replace it with legal language tailored to your business before using it publicly.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 28px;">
+    <div class="container policy-stack">
+      <div class="policy-block reveal">
+        <h2>Information we collect</h2>
+        <p>We may collect contact details, shipping information, and order-related information when users interact with the site or complete checkout.</p>
+      </div>
+      <div class="policy-block reveal">
+        <h2>How information is used</h2>
+        <p>Information may be used to process orders, provide support, improve the website experience, and communicate about purchases or inquiries.</p>
+      </div>
+      <div class="policy-block reveal">
+        <h2>Payments</h2>
+        <p>Payments are processed by Stripe. Sensitive payment details are handled through Stripe’s secure checkout experience and are not stored directly on this frontend demo.</p>
+      </div>
+      <div class="policy-block reveal">
+        <h2>Cookies and analytics</h2>
+        <p>You may use cookies or analytics tools to improve performance, understand user behavior, and optimize conversions. Disclose your actual tooling in production.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+  
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-mark">N</span>
+          <span class="brand-text">NOIR ATELIER</span>
+        </a>
+        <p>A premium product brand demo built to sell high-end website services with real structure, trust pages, and checkout.</p>
+      </div>
+
+      <div class="footer-links">
+        <strong>Shop</strong>
+        <a href="shop.html">Collection</a>
+        <a href="product-obsidian-travel-set.html">Obsidian Travel Set</a>
+        <a href="product-atlas-weekender.html">Atlas Weekender</a>
+      </div>
+
+      <div class="footer-links">
+        <strong>Company</strong>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+        <a href="shipping-returns.html">Shipping & Returns</a>
+      </div>
+
+      <div class="footer-links">
+        <strong>Legal</strong>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-and-conditions.html">Terms & Conditions</a>
+        <span>Secure checkout by Stripe</span>
+      </div>
+    </div>
+    <div class="footer-note">Demo website for premium product brand presentation. Replace copy, products, and policies for production use.</div>
+  </div>
+</footer>
+
+<aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <button class="icon-button" id="closeCartBtn" aria-label="Close cart">✕</button>
+  </div>
+
+  <div class="cart-items" id="cartItems"></div>
+
+  <div class="cart-footer">
+    <div class="cart-total-row">
+      <span>Subtotal</span>
+      <strong id="cartSubtotal">$0.00</strong>
+    </div>
+    <p class="cart-note">Shipping information and payment are collected securely at checkout.</p>
+    <button class="btn btn-gold full" id="checkoutBtn">Checkout</button>
+  </div>
+</aside>
+<div class="backdrop" id="backdrop"></div>
+<script src="products.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

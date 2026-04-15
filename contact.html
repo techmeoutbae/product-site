@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — NOIR ATELIER</title>
+  <meta name="description" content="Premium multi-page luxury product brand demo website." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="" >
+  
+<header class="topbar">
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">N</span>
+      <span class="brand-text">NOIR ATELIER</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html" class="">Home</a>
+      <a href="shop.html" class="">Collection</a>
+      <a href="about.html" class="">Brand</a>
+      <a href="faq.html" class="">FAQ</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="cart-button" id="openCartBtn" aria-label="Open cart">
+        <span>Cart</span>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+  
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-panel reveal">
+        <p class="eyebrow">Private Client Support</p>
+        <h1>Speak with our team.</h1>
+        <p>This page is structured like a premium concierge contact experience. For production, connect the form to Formspree, Resend, your backend, or a CRM workflow.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-grid">
+      <div class="contact-card reveal">
+        <p class="eyebrow">Contact Details</p>
+        <h2 class="section-title">Premium assistance, thoughtfully handled.</h2>
+        <p>Email: concierge@noiratelier-demo.com</p>
+        <p>Response time: Within 1 business day</p>
+        <p>Support hours: Monday to Friday, 9:00 AM to 6:00 PM</p>
+        <div class="notice">You can replace this with your business email, phone number, Calendly link, or lead intake workflow.</div>
+      </div>
+
+      <div class="form-card reveal">
+        <p class="eyebrow">Inquiry Form</p>
+        <form id="contactForm" class="form-grid">
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="field">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" />
+          </div>
+          <div class="field">
+            <label for="message">How can we help?</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button class="btn btn-gold" type="submit">Submit Inquiry</button>
+        </form>
+        <div id="contactMessage" class="form-message"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+  
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-mark">N</span>
+          <span class="brand-text">NOIR ATELIER</span>
+        </a>
+        <p>A premium product brand demo built to sell high-end website services with real structure, trust pages, and checkout.</p>
+      </div>
+
+      <div class="footer-links">
+        <strong>Shop</strong>
+        <a href="shop.html">Collection</a>
+        <a href="product-obsidian-travel-set.html">Obsidian Travel Set</a>
+        <a href="product-atlas-weekender.html">Atlas Weekender</a>
+      </div>
+
+      <div class="footer-links">
+        <strong>Company</strong>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+        <a href="shipping-returns.html">Shipping & Returns</a>
+      </div>
+
+      <div class="footer-links">
+        <strong>Legal</strong>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-and-conditions.html">Terms & Conditions</a>
+        <span>Secure checkout by Stripe</span>
+      </div>
+    </div>
+    <div class="footer-note">Demo website for premium product brand presentation. Replace copy, products, and policies for production use.</div>
+  </div>
+</footer>
+
+<aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <button class="icon-button" id="closeCartBtn" aria-label="Close cart">✕</button>
+  </div>
+
+  <div class="cart-items" id="cartItems"></div>
+
+  <div class="cart-footer">
+    <div class="cart-total-row">
+      <span>Subtotal</span>
+      <strong id="cartSubtotal">$0.00</strong>
+    </div>
+    <p class="cart-note">Shipping information and payment are collected securely at checkout.</p>
+    <button class="btn btn-gold full" id="checkoutBtn">Checkout</button>
+  </div>
+</aside>
+<div class="backdrop" id="backdrop"></div>
+<script src="products.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

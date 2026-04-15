@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOIR ATELIER — Premium Product Brand Demo</title>
+  <meta name="description" content="Premium multi-page luxury product brand demo website." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="" >
+  
+<header class="topbar">
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">N</span>
+      <span class="brand-text">NOIR ATELIER</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="shop.html" class="">Collection</a>
+      <a href="about.html" class="">Brand</a>
+      <a href="faq.html" class="">FAQ</a>
+      <a href="contact.html" class="">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="cart-button" id="openCartBtn" aria-label="Open cart">
+        <span>Cart</span>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+  
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Luxury Product Brand Demo</p>
+        <h1>Sell an experience.</h1>
+        <p class="lead">A complete luxury brand experience: strong art direction, real structure, trust pages, product depth, and live checkout capability.</p>
+        <div class="hero-actions">
+          <a href="shop.html" class="btn btn-gold">Shop Collection</a>
+          <a href="about.html" class="btn btn-ghost">Explore Brand Story</a>
+        </div>
+
+        <div class="hero-metrics">
+          <div class="metric-card">
+            <strong>Multi-page</strong>
+            <span class="section-copy">A real site structure, not just a landing page.</span>
+          </div>
+          <div class="metric-card">
+            <strong>Luxury UI</strong>
+            <span class="section-copy">Editorial typography, controlled spacing, premium contrast.</span>
+          </div>
+          <div class="metric-card">
+            <strong>Functional</strong>
+            <span class="section-copy">Cart, Stripe checkout, shipping capture, legal pages.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-card">
+          <div class="hero-card-badge">Featured Release</div>
+          <h2 class="section-title">Obsidian Travel Set</h2>
+          <p>A luxury hero product concept with a restrained visual language and sales-ready presentation.</p>
+          <div class="hero-price-row">
+            <span class="hero-price">$240.00</span>
+            <button class="btn btn-gold small" data-add="obsidian-travel-set">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-strip section" style="padding-top: 0;">
+    <div class="container strip-grid reveal">
+      <div>Luxury positioning</div>
+      <div>Premium conversion flow</div>
+      <div>Client-ready structure</div>
+      <div>GitHub + Vercel deployable</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="collection-head reveal">
+        <div>
+          <p class="eyebrow">Curated Collection</p>
+          <h2 class="section-title">Best sellers</h2>
+        </div>
+        <a href="shop.html" class="text-link">View full collection</a>
+      </div>
+      <div class="product-grid" id="productGrid" data-category="All"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container feature-grid">
+      <div class="feature-panel reveal"></div>
+      <div class="feature-copy reveal">
+        <p class="eyebrow">Luxury Without Noise</p>
+        <h2>Premium websites feel efficient, not overcrowded.</h2>
+        <p>This demo uses whitespace, elegant hierarchy, controlled accent color, and strong product framing to feel expensive without becoming busy. It is intentionally restrained so the brand looks higher-value.</p>
+        <div class="hero-actions" style="margin-top: 24px; margin-bottom: 0;">
+          <a href="contact.html" class="btn btn-gold">Request This Style</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container detail-grid">
+      <div class="detail-box reveal">
+        <span class="detail-label">Brand Story</span>
+        <h3>Positioning beyond templates</h3>
+        <p>This site demonstrates narrative, trust, structure, and premium polish rather than just visual decoration.</p>
+      </div>
+      <div class="detail-box reveal">
+        <span class="detail-label">Trust Layer</span>
+        <h3>Legal pages and policy depth</h3>
+        <p>Privacy, terms, shipping, and FAQ pages make the demo feel commercially credible and complete.</p>
+      </div>
+      <div class="detail-box reveal">
+        <span class="detail-label">Commerce</span>
+        <h3>Checkout with shipping</h3>
+        <p>Customers can move from browse to cart to Stripe-hosted checkout with shipping details captured securely.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+  
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-mark">N</span>
+          <span class="brand-text">NOIR ATELIER</span>
+        </a>
+        <p>A premium product brand demo  with real structure, trust pages, and checkout.</p>
+      </div>
+
+      <div class="footer-links">
+        <strong>Shop</strong>
+        <a href="shop.html">Collection</a>
+        <a href="product-obsidian-travel-set.html">Obsidian Travel Set</a>
+        <a href="product-atlas-weekender.html">Atlas Weekender</a>
+      </div>
+
+      <div class="footer-links">
+        <strong>Company</strong>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+        <a href="shipping-returns.html">Shipping & Returns</a>
+      </div>
+
+      <div class="footer-links">
+        <strong>Legal</strong>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-and-conditions.html">Terms & Conditions</a>
+        <span>Secure checkout by Stripe</span>
+      </div>
+    </div>
+    <div class="footer-note">Demo website for premium product brand presentation. Replace copy, products, and policies for production use.</div>
+  </div>
+</footer>
+
+<aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <button class="icon-button" id="closeCartBtn" aria-label="Close cart">✕</button>
+  </div>
+
+  <div class="cart-items" id="cartItems"></div>
+
+  <div class="cart-footer">
+    <div class="cart-total-row">
+      <span>Subtotal</span>
+      <strong id="cartSubtotal">$0.00</strong>
+    </div>
+    <p class="cart-note">Shipping information and payment are collected securely at checkout.</p>
+    <button class="btn btn-gold full" id="checkoutBtn">Checkout</button>
+  </div>
+</aside>
+<div class="backdrop" id="backdrop"></div>
+<script src="products.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

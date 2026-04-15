@@ -1,0 +1,12 @@
+{
+  "name": "premium-brand-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "stripe": "^18.3.0"
+  }
+}
