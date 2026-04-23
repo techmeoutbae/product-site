@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product 4 — YOUR BRAND</title>
+  <meta name="description" content="Premium storefront with responsive layouts, polished product pages, and live checkout." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-product-id="product-4">
+  <header class="topbar">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">Y</span>
+        <span class="brand-text">YOUR BRAND</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="shop.html" class="active">Collection</a>
+        <a href="about.html">Approach</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cart-button" id="openCartBtn" aria-label="Open cart">
+          <span>Cart</span>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-panel reveal">
+          <p class="eyebrow" id="productHeroLabel">Series 2</p>
+          <h1 id="productHeroTitle">Product 4</h1>
+          <p id="productHeroDescription">Product description</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 30px;">
+      <div class="container product-page-grid">
+        <div class="feature-panel reveal">
+          <div class="product-stage" id="productStage" data-index="04">
+            <div class="product-shell"></div>
+            <div class="product-core"></div>
+            <div class="product-orbit"></div>
+          </div>
+        </div>
+        <div class="product-page-card reveal">
+          <p class="eyebrow">Product Overview</p>
+          <div class="product-buy-row">
+            <div>
+              <h2 class="section-title" id="productPanelTitle">Product 4</h2>
+              <p class="product-page-price" id="productPanelPrice">$95.00</p>
+            </div>
+            <span class="product-reference" id="productReference">Ref 04</span>
+          </div>
+          <p id="productPanelDescription">Product description</p>
+          <div class="notice">Shipping and payment are handled securely at checkout.</div>
+          <div class="hero-actions" style="margin-top: 24px; margin-bottom: 0;">
+            <button class="btn btn-gold" id="productAddBtn" data-add="product-4">Add to Cart</button>
+            <a href="shop.html" class="btn btn-ghost">Return to Collection</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 16px;">
+      <div class="container">
+        <div class="related-head reveal">
+          <div>
+            <p class="eyebrow">Related Products</p>
+            <h2 class="section-title">More from the collection</h2>
+          </div>
+          <a href="shop.html" class="text-link">See all products</a>
+        </div>
+        <div class="related-grid" id="relatedProducts"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <span class="brand-mark">Y</span>
+            <span class="brand-text">YOUR BRAND</span>
+          </a>
+          <p>Premium storefront with responsive layouts, polished product pages, and a live checkout flow.</p>
+        </div>
+
+        <div class="footer-links">
+          <strong>Shop</strong>
+          <a href="shop.html">Collection</a>
+          <a href="product-1.html">Product 1</a>
+          <a href="product-2.html">Product 2</a>
+        </div>
+
+        <div class="footer-links">
+          <strong>Company</strong>
+          <a href="about.html">Approach</a>
+          <a href="contact.html">Contact</a>
+          <a href="faq.html">FAQ</a>
+          <a href="shipping-returns.html">Shipping & Returns</a>
+        </div>
+
+        <div class="footer-links">
+          <strong>Legal</strong>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-and-conditions.html">Terms & Conditions</a>
+          <span>Secure checkout by Stripe</span>
+        </div>
+      </div>
+      <div class="footer-note">Responsive ecommerce presentation with collection, product, support, and policy pages.</div>
+    </div>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button class="icon-button" id="closeCartBtn" aria-label="Close cart">✕</button>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>Subtotal</span>
+        <strong id="cartSubtotal">$0.00</strong>
+      </div>
+      <p class="cart-note">Shipping information and payment are collected securely at checkout.</p>
+      <button class="btn btn-gold full" id="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+  <div class="backdrop" id="backdrop"></div>
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

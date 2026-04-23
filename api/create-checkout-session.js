@@ -3,12 +3,12 @@ import Stripe from "stripe";
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 const PRODUCT_CATALOG = {
-  "obsidian-travel-set": { name: "Obsidian Travel Set", unit_amount: 24000 },
-  "atlas-weekender": { name: "Atlas Weekender", unit_amount: 32000 },
-  "velour-signature-case": { name: "Velour Signature Case", unit_amount: 18000 },
-  "eclipse-carry-wallet": { name: "Eclipse Carry Wallet", unit_amount: 9500 },
-  "luxe-station-desk-set": { name: "Luxe Station Desk Set", unit_amount: 21000 },
-  "noir-essence-kit": { name: "Noir Essence Kit", unit_amount: 15000 }
+  "product-1": { name: "Product 1", unit_amount: 24000 },
+  "product-2": { name: "Product 2", unit_amount: 32000 },
+  "product-3": { name: "Product 3", unit_amount: 18000 },
+  "product-4": { name: "Product 4", unit_amount: 9500 },
+  "product-5": { name: "Product 5", unit_amount: 21000 },
+  "product-6": { name: "Product 6", unit_amount: 15000 }
 };
 
 export async function POST(request) {
